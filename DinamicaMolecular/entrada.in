@@ -1,0 +1,24 @@
+Temperatura (K): 4.0
+Método de Integração: 1/2. Verlet(p=0.5/p=2), 3/4. Velocity Verlet(Alg. 1/2), 5. Leap => 1
+Método de Inicialização de Velocidade: 0. Zero, 1. Teorema Equipartição, 2. Distribuição de Boltzman => 0
+Potencial: 1. Lennard Jones, 2. Morse => 1
+Tempo de Simulação: 1e-14
+Passo Temporal: 1e-17
+
+Vetor da Rede:
+1.0 0.0 0.0
+0.0	1.0	0.0
+0.0	0.0	1.0
+
+Vetor de Posição:
+0.0	0.0	0.0
+0.5	0.5	0.0
+0.5	0.0	0.5
+0.0	0.5	0.5
+
+hist(a[(1+0*256):(1*256),3])
+dev.new()
+hist(a[(1+1*256):(2*256),3])
+dev.new()
+hist(a[(1+101*256):(102*256),3])
+hist(sqrt(a[26133:26368,2]*a[26133:26368,2]+a[26133:26368,3]*a[26133:26368,3]+a[26133:26368,4]*a[26133:26368,4]))hist(sqrt(b[26133:26368,2]*b[26133:26368,2]+b[26133:26368,3]*b[26133:26368,3]+b[26133:26368,4]*b[26133:26368,4]))
